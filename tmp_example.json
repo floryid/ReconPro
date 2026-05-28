@@ -1,0 +1,181 @@
+{
+  "assets": [
+    {
+      "hosts": [
+        "example.com"
+      ],
+      "ip": "104.20.23.154"
+    },
+    {
+      "hosts": [
+        "example.com"
+      ],
+      "ip": "172.66.147.243"
+    },
+    {
+      "hosts": [
+        "example.com"
+      ],
+      "ip": "2606:4700:10::6814:179a"
+    },
+    {
+      "hosts": [
+        "example.com"
+      ],
+      "ip": "2606:4700:10::ac42:93f3"
+    }
+  ],
+  "dns": {
+    "A": [
+      "104.20.23.154",
+      "172.66.147.243"
+    ],
+    "AAAA": [
+      "2606:4700:10::ac42:93f3",
+      "2606:4700:10::6814:179a"
+    ],
+    "CNAME": [],
+    "MX": [
+      "0 ."
+    ],
+    "NS": [
+      "elliott.ns.cloudflare.com.",
+      "hera.ns.cloudflare.com."
+    ],
+    "SOA": [
+      "elliott.ns.cloudflare.com. dns.cloudflare.com. 2403488901 10000 2400 604800 1800"
+    ],
+    "TXT": [
+      "v=spf1 -all",
+      "_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"
+    ]
+  },
+  "dns_derived_hosts": [],
+  "dns_extra": {
+    "DMARC": [
+      "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s"
+    ],
+    "MTA-STS": [],
+    "TLS-RPT": []
+  },
+  "email_security": {
+    "dmarc_policy": "reject",
+    "dmarc_rua": [],
+    "domain": "example.com",
+    "spf": "v=spf1 -all"
+  },
+  "generated_at": "2026-05-28T07:03:40.757998+00:00",
+  "resolved_ips": [
+    "2606:4700:10::6814:179a",
+    "2606:4700:10::ac42:93f3",
+    "104.20.23.154",
+    "172.66.147.243"
+  ],
+  "risk": {
+    "notes": [
+      "Security headers penting hilang: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Permissions-Policy, Referrer-Policy"
+    ],
+    "posture": "LOW RISK",
+    "score": 22
+  },
+  "subdomains": {},
+  "target": "example.com",
+  "web": {
+    "meta": {
+      "enabled": true,
+      "url_count": 2
+    },
+    "targets": {
+      "http://example.com/": {
+        "cookies": {
+          "issues": [],
+          "missing_httponly": 0,
+          "missing_samesite": 0,
+          "missing_secure": 0,
+          "total": 0
+        },
+        "final_url": "http://example.com/",
+        "headers": {
+          "accept-ranges": "bytes",
+          "age": "0",
+          "allow": "GET, HEAD",
+          "cf-cache-status": "HIT",
+          "cf-ray": "a02b66aa481fa039-SIN",
+          "connection": "close",
+          "content-type": "text/html",
+          "date": "Thu, 28 May 2026 07:03:42 GMT",
+          "last-modified": "Fri, 22 May 2026 08:19:40 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked"
+        },
+        "security_headers": {
+          "Content-Security-Policy": false,
+          "Permissions-Policy": false,
+          "Referrer-Policy": false,
+          "Strict-Transport-Security": false,
+          "X-Content-Type-Options": false,
+          "X-Frame-Options": false
+        },
+        "server": "cloudflare",
+        "status": 200,
+        "tech": [
+          "Cloudflare"
+        ],
+        "title": "Example Domain",
+        "url": "http://example.com/",
+        "waf": {
+          "signals": [
+            "header:cf-ray",
+            "server:cloudflare"
+          ],
+          "vendor": "Cloudflare"
+        }
+      },
+      "https://example.com/": {
+        "cookies": {
+          "issues": [],
+          "missing_httponly": 0,
+          "missing_samesite": 0,
+          "missing_secure": 0,
+          "total": 0
+        },
+        "final_url": "https://example.com/",
+        "headers": {
+          "accept-ranges": "bytes",
+          "age": "9",
+          "allow": "GET, HEAD",
+          "cf-cache-status": "HIT",
+          "cf-ray": "a02b66aaee6cf8e2-SIN",
+          "connection": "close",
+          "content-type": "text/html",
+          "date": "Thu, 28 May 2026 07:03:42 GMT",
+          "last-modified": "Fri, 22 May 2026 08:19:40 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked"
+        },
+        "security_headers": {
+          "Content-Security-Policy": false,
+          "Permissions-Policy": false,
+          "Referrer-Policy": false,
+          "Strict-Transport-Security": false,
+          "X-Content-Type-Options": false,
+          "X-Frame-Options": false
+        },
+        "server": "cloudflare",
+        "status": 200,
+        "tech": [
+          "Cloudflare"
+        ],
+        "title": "Example Domain",
+        "url": "https://example.com/",
+        "waf": {
+          "signals": [
+            "header:cf-ray",
+            "server:cloudflare"
+          ],
+          "vendor": "Cloudflare"
+        }
+      }
+    }
+  }
+}
